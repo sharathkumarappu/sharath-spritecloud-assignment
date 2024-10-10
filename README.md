@@ -1,5 +1,3 @@
-# Playwright tests for https://saucedemo.com and https://reqres.in websites
-
 # Quick Start
 
 ### Install Dependencies
