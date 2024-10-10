@@ -1,0 +1,14 @@
+{
+    "registrationUserInfo": {
+        "email": "eve.holt@reqres.in",
+        "password": "pistol"
+    },
+    "createUserInfo": {
+        "name": "morpheus",
+        "job": "leader"
+    },
+    "updateUserInfo": {
+        "name": "morpheus",
+        "job": "zion resident"
+    }
+}
