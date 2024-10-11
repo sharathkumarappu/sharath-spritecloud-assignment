@@ -20,7 +20,7 @@ test.afterEach(async ({ loginPage }, testInfo) => {
     });
 });
 
-test.describe("UI TESTS - Sauce Demo Positive scenarios", { tag: '@positive' }, async () => {
+test.describe("UI TESTS - Sauce Demo Positive scenarios", { tag: [ '@positive', '@ui' ] }, async () => {
     test("TEST CASE 1 - Complete the end-to-end flow of a product order with 2 products", async ({ loginPage, productsPage, productInfoPage, cartPage, checkoutYourInfoPage, checkoutOverviewPage }) => {
         let products = uiTestData.products;
         let customerInfo = uiTestData.customerInfo;
@@ -63,7 +63,7 @@ test.describe("UI TESTS - Sauce Demo Positive scenarios", { tag: '@positive' }, 
     });
 });
 
-test.describe("UI TESTS - Sauce Demo Negative scenarios", { tag: '@negative' }, async () => {
+test.describe("UI TESTS - Sauce Demo Negative scenarios", { tag: [ '@negative', '@ui' ] }, async () => {
     test("TEST CASE 3 - Error User - Validate the non appearance confirmation message", async ({ loginPage, productsPage, productInfoPage, cartPage, checkoutYourInfoPage, checkoutOverviewPage }) => {
         let products = uiTestData.products;
         let customerInfo = uiTestData.customerInfo;
