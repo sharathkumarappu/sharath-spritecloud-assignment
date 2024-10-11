@@ -5,7 +5,7 @@ import { expect } from "@playwright/test";
 import test from "./../lib/BaseTest";
 import * as apiTestData from "./../testData/apiTestData.json";
 
-test.describe("API TESTS", async () => {
+test.describe("API TESTS", { tag: '@api' }, async () => {
     test("TEST CASE 4 - User Registration and Login Flow", async ({ request }) => {
         const registrationUserInfo = apiTestData.registrationUserInfo;
         // User Registration
